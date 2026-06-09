@@ -1,7 +1,0 @@
-AddOutputFilterByType DEFLATE application/wasm
-AddOutputFilterByType DEFLATE application/octet-stream
-AddOutputFilterByType DEFLATE application/javascript
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE text/plain
-Header set Content-Encoding "gzip" "expr=%{CONTENT_TYPE} =~ m#application/(wasm|octet-stream)#"
